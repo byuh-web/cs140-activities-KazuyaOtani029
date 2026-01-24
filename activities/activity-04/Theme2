@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC 2026</title>
+</head>
+<body>
+    <header>
+    <h1>Liverpool FC</h1>
+
+    <nav><a href="https://www.liverpoolfc.com/team/mens">Squad Members</a>
+<br>
+<a href="FlorianWirtz.html">Florian Wirtz</a>
+<br>
+<a href="#Top3scorerinthisseason">Top 3 scorer in this season so far</a>
+<br>
+<a href="#PremierLeaGue25-26seasonsofar">Top 4 teams of premier league in this season so far</a>
+<br>
+<a href ="#myfavoriteplayer">My Favorite Players</a>
+</nav>
+</header>
+<maim>
+<img src="Liverpool2.png" alt="clubemblem">
+<h2 id="Top3scorerinthisseason">Top 3 scorers in this season so far</h2>
+<ol>
+    <li>Hugo Ekitike</li>
+    <li>Cody Gakpo</li>
+    <li>Ryan Gravenberch</li>
+</ol>
+<h2 id="PremierLeaGue25-26seasonsofar">Top 4 teams of premier league in this season so far</h2>
+<ol>
+    <li>Arsenal 50pts</li>
+    <li>Man City 43pts</li>
+    <li>Aston Villa 43pts</li>
+    <li>Liverpool 36pts</li>
+</ol>
+<h2 id="myfavoriteplayer">My Favorite Players</h2>
+<ul>
+    <li>Alisson Backer(The Best Goal Keeper in the world)</li>
+    <li>Virgil van Dijk(The Best Defender in the world)</li>
+    <li>Alexis Mac Allister(World Cup Champion)</li>
+</ul>
+<h2>The Miracle Comeback in Anfield</h2>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/buoMlAshKXQ?si=4M7jvY5ichiYy5Fl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>The miracle comeback in Anfield
+
+
+</maim>
+<footer>
+    <p>&copy; 2026 Liverpool FC</p>
+    <br> 
+    <a href="mailto:KazuyaOtani7@byuh.edu">Send mail to a writer</a>
+    </footer>
+</body>
+</html>
