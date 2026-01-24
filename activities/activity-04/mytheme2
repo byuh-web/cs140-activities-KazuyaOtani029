@@ -21,7 +21,7 @@
 <a href ="#myfavoriteplayer">My Favorite Players</a>
 </nav>
 </header>
-<maim>
+<main>
 <img src="Liverpool2.png" alt="clubemblem">
 <h2 id="Top3scorerinthisseason">Top 3 scorers in this season so far</h2>
 <ol>
@@ -43,8 +43,8 @@
     <li>Alexis Mac Allister(World Cup Champion)</li>
 </ul>
 <h2>The Miracle Comeback in Anfield</h2>
-    <iframe width="400" height="315" src="https://www.youtube.com/embed/buoMlAshKXQ?si=4M7jvY5ichiYy5Fl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>The miracle comeback in Anfield
-</maim>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/buoMlAshKXQ?si=4M7jvY5ichiYy5Fl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</main>
 <footer>
     <p>&copy; 2026 Liverpool FC</p>
     <br> 
