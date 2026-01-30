@@ -1,0 +1,24 @@
+p{
+    color: blue;
+}
+h3{
+    color:purple;
+}
+
+.first{
+    color:red;
+}
+#username {
+    color:yellow;
+}
+.color{
+    color: #049a9e
+} 
+.color2{
+    color: rgba(1.1.255.1);
+}
+.kimikesu{
+    color: gold; font-size: larger;
+}
+
+
