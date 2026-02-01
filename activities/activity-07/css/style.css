@@ -1,0 +1,33 @@
+#Northshore{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.body{
+    color: #E76F51
+}
+.hawaii{
+color: #8D8D8D
+}
+.beautiful{
+    background-color: #FAF3E6
+}
+.oceanblue{
+    color: #1B4965
+}
+.palmgreen{
+    color: #0D5C63
+}
+.size{
+    font-size: 120%
+}
+.font-weight{
+    font-weight: 700;
+}
+.newfont{
+    font-family: cursive;
+}
+.font-style{
+    font-style:italic;
+}
+.black{
+    color:black;
+}
