@@ -74,6 +74,16 @@ nav a.current {
 }
 
 .tourstop {
-    list-style-image: url("images/Japanese-flag-2.png");
+  list-style: none;
+  padding-left: 0;
+}
+
+.tourstop li {
+  background-image: url("images/Japanese-flag-2.png");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;  
+  background-position: left center;
+  padding-left: 30px;
+  margin-bottom: 10px;
 }
 
