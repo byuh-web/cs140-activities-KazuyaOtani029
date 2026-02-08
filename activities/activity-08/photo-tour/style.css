@@ -1,2 +1,79 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.8;
+}
+header {
+    color: #b00020;
+    background-color: #ffffff;
+    padding: 28px; 
+    text-align: center;
+    border-bottom: 3px solid #b00020;
+}
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+nav {
+    background-color: #b00020;
+}
+nav ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+}
+nav li{
+    flex: 1;
+}
+nav a { 
+    display: block;
+    padding: 14px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+main {
+    padding: 36px;
+}
+main h2 {
+    color: #b00020;
+    margin-top: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #b00020;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #f0f0f0;
+    color: #555;
+    border-top: 1px solid #ddd;
+    margin-top: 36px;
+}
+nav a.current {
+    background-color: red;
+    color: white;
+}
+.index-main {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/Japan.png"),
+    url("images/eto_uma_daruma.png");
 
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: right top, left top, left top;
+}
+
+.tourstop {
+    list-style-image: url("images/Japanese-flag-2.png");
+}
 
