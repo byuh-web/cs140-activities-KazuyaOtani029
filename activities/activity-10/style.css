@@ -10,3 +10,16 @@
     height: 100px; 
 
 }
+header {
+    width: 500px;
+    background-color: #8684de;
+}
+img {
+    width: 200px;
+    height: auto;
+}
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
