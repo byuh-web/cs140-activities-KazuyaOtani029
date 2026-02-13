@@ -1,25 +1,17 @@
-.first {
-    border: 5px solid #8684de;
-    padding: 20px;
-    margin: 1rem 3rem 10px 10px;
-}
-.sec {
-    border: 4px dashed #aba435;
-    padding: 10px;
-    width: 300px;
-    height: 100px; 
-
-}
-header {
-    width: 500px;
-    background-color: #8684de;
-}
-img {
-    width: 200px;
-    height: auto;
-}
-figcaption {
+    figcaption {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(168, 46, 46, 0.804);
+}
+
+#pic {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+    

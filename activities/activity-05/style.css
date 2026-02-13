@@ -4,7 +4,15 @@ p{
 }
 h3{
     color: blue;
+    border: 10px solid;
+    padding: 3rem;
+    width: 50%;
+    
 }
 h1{ color: pink;
 
+}
+p{
+    border: 10px;
+    width:auto;
 }
