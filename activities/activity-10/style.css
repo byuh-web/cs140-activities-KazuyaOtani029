@@ -7,11 +7,13 @@
 img {
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(168, 46, 46, 0.804);
+    width: auto;
 }
 
 #pic {
     float: left;
     margin: 0 1rem 1rem 0;
+    width: auto;
 }
 
     
