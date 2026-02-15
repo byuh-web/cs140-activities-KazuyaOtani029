@@ -1,19 +1,112 @@
-    figcaption {
-    font-size: 18px;
-    font-weight: bold;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* font family 1 */
+    background-color: #111;
+    color: white;
+}
+#wrapper {
+    width: 900px;
+    margin: 0 auto; 
+    background-color: #1b1b1b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.site-header {
+    height: 180px;
+    padding: 30px;
+    border-bottom: 4px solid crimson;
     text-align: center;
+
+    background-image: url("images/header-bg.jpg");
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: padding-box;
+}
+.site-title {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px black;
+    margin: 0;
+}
+.site-header {
+    height: 180px;
+    padding: 30px;
+    border-bottom: 4px solid crimson;
+    text-align: center;
+    background-image: url("images/header-bg.jpg");
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: padding-box;
+}
+.tagline {
+    font-style: italic;
+    line-height: 1.8;
 }
 
-img {
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(168, 46, 46, 0.804);
-    width: auto;
+.highlight {
+    color: crimson;
+    font-weight: bold;
 }
-
-#pic {
-    float: left;
-    margin: 0 1rem 1rem 0;
-    width: auto;
+.main-nav {
+    background-color: crimson;
+    padding: 10px;
+    border-bottom: 3px solid white;
 }
-
-    
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+.nav-item {
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-link:hover {
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.content {
+    padding: 30px;
+    line-height: 1.8;
+}
+.text-block {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.float-image {
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 2px solid crimson;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255,0,0,0.6);
+    width: 270px;
+}
+.float-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.caption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-image: url("images/kazuya.jpg");
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: content-box;
+    border-top: 4px solid crimson;
+    font-size: 14px;
+}
