@@ -10,17 +10,6 @@ body {
     background-color: #1b1b1b;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
-.site-header {
-    height: 180px;
-    padding: 30px;
-    border-bottom: 4px solid crimson;
-    text-align: center;
-
-    background-image: url("images/header-bg.jpg");
-    background-size: cover;
-    background-origin: padding-box;
-    background-clip: padding-box;
-}
 .site-title {
     font-family: Georgia, 'Times New Roman', serif; 
     font-size: 42px;
