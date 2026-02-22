@@ -24,3 +24,25 @@
     display: grid;
     grid-template-columns: 50% 25% 25%; 
 }
+.bird {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.even {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% 0 1fr;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, 1fr);
+}
