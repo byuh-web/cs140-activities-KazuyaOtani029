@@ -1,29 +1,4 @@
-.box {
 
-    background-color: rgb(129, 186, 183);
-
-    border: 2px solid black;
-     
-
-}
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-}
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-}
-.container3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-column-gap: 15px;
-}
-.container4{
-    display: grid;
-    grid-template-columns: 50% 25% 25%; 
-}
 .bird {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -35,7 +10,8 @@
 
 main {
     display: grid;
-    grid-template-columns: 15% 0 1fr;
+    grid-template-columns: 20% 1fr;
+    gap: 20px; 
 }
 img {
     width: 100%;
@@ -43,6 +19,6 @@ img {
 }
 footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
 }
