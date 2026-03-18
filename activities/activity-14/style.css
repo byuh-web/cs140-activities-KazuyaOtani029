@@ -1,0 +1,94 @@
+body {
+    background-color: #8b5e3c;
+    font-size: 16px;
+    padding:10px;
+}
+.container {
+    display: block; 
+}
+@media (min-width: 768px) {
+    .container {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    body {
+        font-size: 18px;
+    }
+    .tokugawa {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 20px; 
+    }
+    .container {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    img{
+        max-width: 100%;
+        height: auto; 
+    }
+    .tokugawa {
+            flex: 1 1 calc(33.33% - 20px); 
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: blanchedalmond;
+
+   
+}
+.menu a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px; 
+    text-align: center;
+}
+.menu :hover {
+    background-color: rgb(94, 105, 20);
+}
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .menu a {
+        padding: 10px 15px;
+    }
+
+}
+.tokugawa {
+    padding: 10px; 
+    text-align: center;
+    background-color: rgba(56, 169, 22, 0);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.tokugawa img {
+    height: auto;
+    border-radius: 10px;
+}
+p{
+    color: #2c2c2c;
+}
+h2 {
+    color: #2c2c2c;
+    margin-top: 10px;
+}
