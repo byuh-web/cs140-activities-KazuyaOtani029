@@ -17,7 +17,7 @@
     </header>
     <main>
         <h1>Aloha Dentist Appointment Form</h1>
-        <form>
+        <form id="myform">
     <fieldset>
         <legend>Personal Information</legend>
 
@@ -81,6 +81,16 @@
         <button type="submit">Submit</button>
     </fieldset>
 </form>
+<script>
+    const form=document.getElementById(myform).addEventListener(submit,function(event) {
+    event.preventDefault();
+    const name = document.getElementById(name).value;
+    const age = document.getElementById(age).value;
+    const email = document.getElementById(email).value;
+
+    }
+    
+</script>
     </main>
     <footer>
         <p>Don't forget to update your information!</p>
