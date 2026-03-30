@@ -13,167 +13,83 @@
             <a href="#">Home</a>
             <a href="#">Appointments</a>
         </nav>
-    
     </header>
+
     <main>
         <h1>Aloha Dentist Appointment Form</h1>
-        <form id="apoform">
-    <fieldset>
-        <legend>Personal Information</legend>
 
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+        
+        <form id="appointmentForm">
+            <fieldset>
+                <legend>Personal Information</legend>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-        </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
 
-        <div class="form-group">
-            <label>Gender:</label>
-            <div class="options">
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-            </div>
-        </div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
 
-        <div class="form-group">
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date">
-        </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age">
-        </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
 
-        <div class="form-group">
-            <label for="treatment">Treatment:</label>
-            <select id="treatment" name="treatment">
-                <option>Cleaning</option>
-                <option>Checking</option>
-                <option>Surgery</option>
-            </select>
-        </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
 
-        <div class="form-group">
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments"></textarea>
-        </div>
+                <div class="form-group">
+                    <label for="treatment">Treatment:</label>
+                    <select id="treatment" name="treatment">
+                        <option>Cleaning</option>
+                        <option>Checking</option>
+                        <option>Surgery</option>
+                    </select>
+                </div>
 
-        <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
 
-        <div class="form-group">
-            <label>Agree:</label>
-            <div class="options">
-                <label><input type="checkbox" name="terms"> I agree</label>
-            </div>
-        </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
 
-        <button type="submit">Submit</button>
-    </fieldset>
-<script src="script.js">
-    
-const form = document.getElementById("appointmentForm");
+                <div class="form-group">
+                    <label>Agree:</label>
+                    <div class="options">
+                        <label><input type="checkbox" name="terms"> I agree</label>
+                    </div>
+                </div>
 
-form.addEventListener("submit", function (event) {
-    
-    event.preventDefault();
-
-    
-    const formData = {
-        name: document.getElementById("name").value,
-        password: document.getElementById("password").value,
-        gender: document.querySelector("input[name='gender']:checked")?.value || "",
-        date: document.getElementById("date").value,
-        age: document.getElementById("age").value,
-        treatment: document.getElementById("treatment").value,
-        comments: document.getElementById("comments").value,
-        phone: document.getElementById("phone").value,
-        email: document.getElementById("email").value,
-        terms: document.querySelector("input[name='terms']").checked
-    };
-
-    
-    console.log(formData);
-
-    
-    if (!validateForm(formData)) {
-        return;
-    }
-
-    
-    sendData(formData);
-});
-
-
-
-function validateForm(data) {
-    let filledCount = 0;
-
-    for (let key in data) {
-        if (data[key] !== "" && data[key] !== false) {
-            filledCount++;
-        }
-    }
-
-    
-    if (filledCount < 3) {
-        alert("Please fill at least 3 fields.");
-        return false;
-    }
-
-    
-    if (data.age && (data.age < 0 || data.age > 120)) {
-        alert("Please enter a valid age (0-120).");
-        return false;
-    }
-
-    if (data.name.length > 0 && data.name.length < 2) {
-        alert("Name must be at least 2 characters.");
-        return false;
-    }
-
-    return true;
-}
-
-
-function sendData(data) {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "response.json", true);
-
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            const response = JSON.parse(xhr.responseText);
-
-            
-            const message = document.createElement("p");
-            message.textContent = response.message;
-
-            document.body.appendChild(message);
-
-            
-            form.reset();
-        } else {
-            alert("Error submitting form.");
-        }
-    };
-
-    xhr.send();
-}
-</script>
-</form>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </main>
+
     <footer>
         <p>Don't forget to update your information!</p>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
