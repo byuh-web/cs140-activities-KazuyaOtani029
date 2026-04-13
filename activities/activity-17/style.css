@@ -1,0 +1,14 @@
+.block1{
+    display: block;
+    background-color: red;
+    margin-top: 10px;
+}
+.block2{
+    display: block;
+    background-color: pink;
+
+
+}
+#selector{
+    color: blue;
+}

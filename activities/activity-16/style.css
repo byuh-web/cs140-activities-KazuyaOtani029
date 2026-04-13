@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #faf8f3;
+    color: #1a1a1a;
+    line-height: 1.8;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    color: #e8d5b0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #222;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #c0392b;
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h2 {
+    color: #c0392b;
+    border-bottom: 2px solid #d4c5a0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f7f3ea;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border: 1px solid #d4c5a0;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    margin-top: 0.3rem;
+}
+
+button {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 1.5rem 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        background: #333;
+    }
+}

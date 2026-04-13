@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your experience with Japanese cuisine — fill out our food survey and preferences form.">
+    <meta name="keywords" content="Japanese food survey, contact form, cuisine feedback">
+    <meta name="author" content="Your Name">
+    <title>Japanese Cuisine — Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Japanese Cuisine</h1>
+            <p>Japanese cuisine has a long history and is one of the most recognizable aspects of Japanese culture.</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ramen.html">Ramen</a>
+            <a href="sushi.html">Sushi</a>
+            <a href="onigiri.html">Onigiri</a>
+            <a href="table.html">History &amp; Preparation</a>
+            <a href="form.html" class="active">Contact / Survey</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Japanese Cuisine Survey</h2>
+        <p>Japanese cuisine is widely seen as healthy, fresh, and visually appealing. However, many people mainly recognize only popular dishes like sushi and ramen, showing limited understanding of its full variety.</p>
+
+        <div class="form-container">
+            <h2>Your Japanese Food Preferences</h2>
+
+            <form id="surveyForm" action="process_form.php" method="post" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Full Name <span style="color:var(--color-accent)">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Taro Yamada" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span style="color:var(--color-accent)">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="e.g. taro@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="favorite">Favorite Japanese Dish <span style="color:var(--color-accent)">*</span></label>
+                    <select id="favorite" name="favorite" required>
+                        <option value="">-- Select a dish --</option>
+                        <option value="Ramen">Ramen</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Onigiri">Onigiri</option>
+                        <option value="Tempura">Tempura</option>
+                        <option value="Tonkatsu">Tonkatsu</option>
+                        <option value="Udon">Udon</option>
+                        <option value="Soba">Soba</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">How familiar are you with Japanese cuisine? <span style="color:var(--color-accent)">*</span></label>
+                    <select id="experience" name="experience" required>
+                        <option value="">-- Select --</option>
+                        <option value="Beginner">Beginner — I have tried very little</option>
+                        <option value="Casual">Casual — I eat it occasionally</option>
+                        <option value="Enthusiast">Enthusiast — I eat it regularly</option>
+                        <option value="Expert">Expert — I cook Japanese food at home</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="visited">Have you visited Japan?</label>
+                    <select id="visited" name="visited">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                        <option value="Planning to">Planning to visit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Share your thoughts about Japanese cuisine..."></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Submit Survey</button>
+            </form>
+
+            <div id="confirmation">
+                <h3>✅ Thank you for your response!</h3>
+                <p>Here is a summary of what you submitted:</p>
+                <p><strong>Name:</strong> <span id="conf-name"></span></p>
+                <p><strong>Email:</strong> <span id="conf-email"></span></p>
+                <p><strong>Favorite Dish:</strong> <span id="conf-favorite"></span></p>
+                <p><strong>Experience Level:</strong> <span id="conf-experience"></span></p>
+                <p><strong>Visited Japan:</strong> <span id="conf-visited"></span></p>
+                <p><strong>Comments:</strong> <span id="conf-comments"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Japanese Cuisine Website. Created by [Your Name].</p>
+    </footer>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name       = document.getElementById('name').value.trim();
+            const email      = document.getElementById('email').value.trim();
+            const favorite   = document.getElementById('favorite').value;
+            const experience = document.getElementById('experience').value;
+            const visited    = document.getElementById('visited').value;
+            const comments   = document.getElementById('comments').value.trim();
+
+            if (!name) {
+                alert('Please enter your full name.');
+                document.getElementById('name').focus();
+                return;
+            }
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                document.getElementById('email').focus();
+                return;
+            }
+            if (!favorite) {
+                alert('Please select your favorite Japanese dish.');
+                document.getElementById('favorite').focus();
+                return;
+            }
+            if (!experience) {
+                alert('Please select your experience level.');
+                document.getElementById('experience').focus();
+                return;
+            }
+
+            document.getElementById('conf-name').textContent       = name;
+            document.getElementById('conf-email').textContent      = email;
+            document.getElementById('conf-favorite').textContent   = favorite;
+            document.getElementById('conf-experience').textContent = experience;
+            document.getElementById('conf-visited').textContent    = visited;
+            document.getElementById('conf-comments').textContent   = comments || '(No comments)';
+
+            document.getElementById('confirmation').style.display = 'block';
+            document.getElementById('confirmation').scrollIntoView({ behavior: 'smooth' });
+
+            const formData = new FormData(this);
+            fetch('process_form.php', { method: 'POST', body: formData })
+                .then(r => r.text())
+                .then(data => console.log('Server response:', data))
+                .catch(err => console.error('Error:', err));
+        });
+    </script>
+</body>
+</html>
