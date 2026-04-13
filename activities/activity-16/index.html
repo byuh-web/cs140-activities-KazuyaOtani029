@@ -9,89 +9,138 @@
     <title>Japanese Cuisine — Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-top">
-            <h1>Japanese Cuisine</h1>
-            <p>Japanese cuisine has a long history and is one of the most recognizable aspects of Japanese culture. Explore ramen, sushi, onigiri, and more.</p>
+
+<header>
+    <div>
+        <h1>Japanese Cuisine</h1>
+        <p>
+            Japanese cuisine has a long history and is one of the most recognizable aspects of Japanese culture.
+            Explore ramen, sushi, onigiri, and more.
+        </p>
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="ramen.html">Ramen</a>
+        <a href="sushi.html">Sushi</a>
+        <a href="onigiri.html">Onigiri</a>
+        <a href="table.html">History &amp; Preparation</a>
+        <a href="form.html">Contact / Survey</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Discover Japanese Food</h2>
+        <p>
+            From steaming bowls of ramen to delicate sushi rolls — Japanese cuisine is a celebration of flavor,
+            tradition, and craftsmanship.
+        </p>
+        <a href="ramen.html">Start Exploring →</a>
+    </section>
+
+    <section>
+        <h2>History of Japanese Cuisine</h2>
+        <p>
+            Japanese cuisine developed over time through geography, religion, and cultural exchange.
+            Traditional diets were based on rice, fish, and vegetables. Buddhism reduced meat consumption,
+            while foreign influence introduced new ingredients and techniques.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="_blank" class="ref-link">
+            Wikipedia — Japanese Cuisine
+        </a>
+    </section>
+
+    <section>
+        <h2>Core Concepts of Japanese Cuisine</h2>
+        <p>
+            Japanese cuisine focuses on simplicity, seasonal ingredients, and natural flavor.
+            Umami is an important taste that defines many dishes.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Umami" target="_blank" class="ref-link">
+            Learn about Umami
+        </a>
+    </section>
+
+    <section>
+        <h2>Main Ingredients</h2>
+        <p>
+            Common ingredients include rice, seafood, vegetables, tofu, and seaweed.
+            Soy sauce, miso, and dashi are essential seasonings in Japanese cooking.
+        </p>
+    </section>
+
+    <section>
+        <h2>Featured Dishes</h2>
+
+        <!-- Ramen -->
+        <div class="card">
+            <a href="ramen.html">
+                <img src="pictures/ramen.jpg" alt="Japanese ramen">
+                <h3>Ramen</h3>
+            </a>
+            <p>
+                Ramen is a noodle soup dish with rich broth and toppings such as pork, egg, and green onions.
+            </p>
         </div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="ramen.html">Ramen</a>
-            <a href="sushi.html">Sushi</a>
-            <a href="onigiri.html">Onigiri</a>
-            <a href="table.html">History &amp; Preparation</a>
-            <a href="form.html">Contact / Survey</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h2>Discover Japanese Food</h2>
-            <p>From steaming bowls of ramen to delicate sushi rolls — Japanese cuisine is a celebration of flavor, tradition, and craftsmanship.</p>
-            <a href="ramen.html" class="hero-btn">Start Exploring →</a>
-        </section>
+        <!-- Sushi -->
+        <div class="card">
+            <a href="sushi.html">
+                <img src="pictures/sushi.jpg" alt="Japanese sushi">
+                <h3>Sushi</h3>
+            </a>
+            <p>
+                Sushi is vinegared rice combined with fish, seafood, or vegetables, often served raw or lightly prepared.
+            </p>
+        </div>
 
-        <section>
-            <h2>History of Japanese Cuisine</h2>
-            <p>Japanese cuisine has developed over time, influenced by geography, religion, and cultural exchange. Traditional diets were based on rice, fish, and vegetables. Buddhism reduced meat consumption, while contact with other countries introduced new foods and cooking methods. Many modern dishes became popular during the Edo period.</p>
-            <p><a class="ref-link" href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="_blank">The explanation of Japanese cuisine</a></p>
-        </section>
+        <!-- Onigiri -->
+        <div class="card">
+            <a href="onigiri.html">
+                <img src="pictures/riceball.jpg" alt="Japanese onigiri">
+                <h3>Onigiri</h3>
+            </a>
+            <p>
+                Onigiri are rice balls often filled with salmon or pickled plum and wrapped in seaweed.
+            </p>
+        </div>
 
-        <section>
-            <h2>Core Concepts of Japanese Cuisine</h2>
-            <p>Japanese cuisine focuses on simplicity and natural flavors. It emphasizes seasonal ingredients, careful presentation, and balance. The concept of umami, a rich savory taste, is also an important part of many dishes.</p>
-            <p><a class="ref-link" href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="_blank">The explanation of Japanese cuisine</a></p>
-        </section>
+    </section>
 
-        <section>
-            <h2>Main Ingredients</h2>
-            <p>Common ingredients include rice, seafood, vegetables, tofu, and seaweed. Seasonings such as soy sauce and miso are widely used. Fresh and simple ingredients are important in creating authentic Japanese flavors. — rice, soy sauce, dashi, miso, etc.</p>
-        </section>
+    <section>
+        <h2>Watch: Introduction to Japanese Cuisine</h2>
 
-        <section>
-            <h2>Featured Dishes</h2>
-            <div class="card-grid">
-                <a href="ramen.html" class="card">
-                    <img src="pictures/ramen.jpg" alt="A bowl of Japanese ramen with noodles and toppings">
-                    <div class="card-body">
-                        <h3>Ramen</h3>
-                        <p>Ramen is a popular Japanese dish consisting of wheat noodles served in a flavorful broth, topped with ingredients such as sliced pork (chashu), green onions, and bamboo shoots. There are many types of ramen, including soy sauce, miso, salt, and pork-based broths, and each region in Japan has its own unique style.</p>
-                    </div>
-                </a>
-                <a href="sushi.html" class="card">
-                    <img src="pictures/sushi.jpg" alt="Assorted sushi on a wooden board">
-                    <div class="card-body">
-                        <h3>Sushi</h3>
-                        <p>Sushi is a traditional Japanese dish made with vinegared rice combined with seafood, vegetables, or other ingredients. There are various types of sushi, such as nigiri and maki rolls. Sushi is known for its use of fresh ingredients and its simple yet refined flavors.</p>
-                    </div>
-                </a>
-                <a href="onigiri.html" class="card">
-                    <img src="pictures/riceball.jpg" alt="Triangular onigiri rice balls wrapped in nori">
-                    <div class="card-body">
-                        <h3>Onigiri(Rice Balls)</h3>
-                        <p>Onigiri is a traditional Japanese food made by shaping cooked rice into a triangle or oval form by hand. It is often filled with ingredients such as pickled plum (umeboshi), salmon, or kelp, and sometimes wrapped in seaweed. Because it is portable and easy to eat, onigiri is loved by many people in Japan.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+        <p>
+            Watch this video to learn more about Japanese cuisine:
+            <a class="ref-link" href="https://www.youtube.com/watch?v=Ireil53PgoE" target="_blank">
+                YouTube Video — Japanese Cuisine Introduction
+            </a>
+        </p>
 
-        <section>
-            <h2>Watch: Introduction to Japanese Cuisine</h2>
-            <p>You can understand about Japanese Cuisine after watching this video. <a class="ref-link" href="https://www.youtube.com/watch?v=VIDEO_ID&t=0s" target="_blank">和食とは？和食の解説と進化〜和食〜 | 簡単な日本の家庭料理 — YouTube</a></p>
-            <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ireil53PgoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/Ireil53PgoE"
+                title="Japanese Cuisine Video"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
-    <footer>
-        <h4>References</h4>
-        <p>https://books.google.com/books/about/Japanese_Cooking.html?id=Ux4jEAAAQBAJ&utm_source=google_books</p>
-        <p>https://en.wikipedia.org/wiki/Ramen</p>
-        <p>https://en.wikipedia.org/wiki/Rice_ball</p>
-        <p>https://en.wikipedia.org/wiki/Sushi</p>
-        <p>&copy; 2025 Japanese Cuisine Website. Created by Kazuya Otani.</p>
-    </footer>
+</main>
+
+<footer>
+    <h4>References</h4>
+    <p><a href="https://en.wikipedia.org/wiki/Japanese_cuisine">Wikipedia — Japanese Cuisine</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Ramen">Wikipedia — Ramen</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Sushi">Wikipedia — Sushi</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Rice_ball">Wikipedia — Onigiri</a></p>
+
+    <p>&copy; 2025 Japanese Cuisine Website. Created by Kazuya Otani.</p>
+</footer>
+
 </body>
 </html>
